@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/colorShade"
+        >
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_margin="5px"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="8px"
+            android:src="@drawable/costicon2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="90px"
+            android:layout_height="wrap_content"
+            android:id="@+id/costNumber"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="30"
+            android:textColor="@color/colorWhite"
+            android:textSize="50px" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorCostShade">
+        <TextView
+            android:layout_width="30px"
+            android:id="@+id/costProgressBar"
+            android:background="@color/colorWhite"
+            android:layout_height="7px"/>
+    </LinearLayout>
+    <!-- max : 160px-->
+</LinearLayout>

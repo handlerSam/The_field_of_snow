@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/galBackground"
+        android:background="@drawable/test_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/galCharacterImageLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:visibility="invisible"
+        android:src="@drawable/sx2_serious"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/galCharacterImageRight"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:visibility="invisible"
+        android:src="@drawable/sy2_serious"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/galCharacterImageMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:src="@drawable/agz_drawing"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/galTouch"
+        android:background="@drawable/gal_horizontalshade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/galMainText"
+        android:layout_width="1300px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2px"
+        android:layout_marginStart="150px"
+        android:text="索尼娅，洗漱都完成了吗？"
+        android:textColor="@color/colorWhite"
+        android:textSize="38px"
+        app:layout_constraintTop_toTopOf="@id/galCharacterText"
+        app:layout_constraintStart_toStartOf="@id/galCharacterText" />
+
+    <TextView
+        android:id="@+id/galCharacterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="350px"
+        android:layout_marginBottom="120px"
+        android:text="母亲"
+        android:textColor="@color/colorHalfWhite"
+        android:textSize="42px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/galSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90px"
+        android:layout_marginEnd="180px"
+        android:text="跳过"
+        android:textColor="@color/colorWhite"
+        android:textSize="40px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:layout_marginStart="8px"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="@id/galSkip"
+        app:layout_constraintStart_toEndOf="@id/galSkip"
+        app:layout_constraintTop_toTopOf="@id/galSkip" />
+
+    <TextView
+        android:id="@+id/galAuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90px"
+        android:layout_marginEnd="130px"
+        android:text="自动"
+        android:textColor="@color/colorWhite"
+        android:textSize="40px"
+        app:layout_constraintEnd_toStartOf="@id/galSkip"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:layout_marginStart="8px"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="@id/galAuto"
+        app:layout_constraintStart_toEndOf="@id/galAuto"
+        app:layout_constraintTop_toTopOf="@id/galAuto"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

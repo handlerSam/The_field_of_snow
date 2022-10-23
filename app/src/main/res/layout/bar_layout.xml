@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bar_background" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="190px"
+            android:layout_height="95px"
+            android:layout_marginStart="50px"
+            android:layout_marginTop="25px"
+            android:background="@drawable/backbutton_shade"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/barBackButton"
+            android:layout_width="180px"
+            android:layout_height="70px"
+            android:layout_marginStart="50px"
+            android:layout_marginTop="25px"
+            android:background="@color/colorSkillChargeBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:layout_marginStart="15px"
+                android:src="@drawable/backarray" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/barItemColumn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginEnd="50px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="20px">
+
+            <ImageView
+                android:layout_width="154px"
+                android:layout_height="60px"
+                android:src="@color/colorQuarterBlack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:src="@drawable/green_ticket"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/barGreenTicketNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5px"
+                android:text="220"
+                android:textColor="@color/colorWhite"
+                android:textSize="38px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginEnd="50px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="5px">
+
+            <ImageView
+                android:layout_width="154px"
+                android:layout_height="60px"
+                android:src="@color/colorQuarterBlack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:src="@drawable/yellow_ticket"
+                android:layout_width="53px"
+                android:layout_height="53px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/barYellowTicketNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5px"
+                android:text="76"
+                android:textColor="@color/colorWhite"
+                android:textSize="38px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/merchantImageView"
+        android:src="@drawable/npc_003"
+        android:layout_marginTop="100px"
+        android:layout_width="800px"
+        android:layout_height="1600px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/merchantNameTextView"
+        android:gravity="center"
+        android:layout_width="300px"
+        android:layout_height="50px"
+        android:layout_marginStart="150px"
+        android:layout_marginBottom="250px"
+        android:text="古怪商人 坎诺特"
+        android:background="@drawable/merchant_name_background"
+        android:textColor="@color/colorHalfBlack"
+        android:textSize="32px"
+        app:layout_constraintStart_toStartOf="@id/merchantImageView"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <LinearLayout
+        android:layout_width="450px"
+        android:layout_height="120px"
+        android:layout_marginStart="190px"
+        android:layout_marginTop="0px"
+        android:gravity="center"
+        android:background="@drawable/merchant_dialog_background"
+        app:layout_constraintStart_toStartOf="@id/merchantImageView"
+        app:layout_constraintTop_toBottomOf="@id/merchantNameTextView">
+        <TextView
+            android:id="@+id/merchantDialogTextView"
+            android:layout_width="300px"
+            android:layout_height="100px"
+            android:text="莱塔尼亚有不少法术珍品，都很昂贵。"
+            android:textColor="@color/colorHalfWhite"
+            android:textSize="30px"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/barRecyclerView"
+        android:layout_width="1200px"
+        android:layout_height="1000px"
+        android:layout_marginTop="100px"
+        android:layout_marginBottom="0px"
+        android:overScrollMode="never"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/merchantImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/barRecruitShade2"
+        android:visibility="invisible"
+        android:background="@color/colorPauseShade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:id="@+id/barRecruitConfirmLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:background="@drawable/card_icon"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:text="是否确认雇佣干员"
+            android:textColor="@color/colorWhite"
+            android:textSize="50px" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginVertical="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/temp33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/barRecruitIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="150px"
+                    android:src="@drawable/agzicon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/barRecruitElite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="60px"
+                    android:src="@drawable/elite0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/barRecruitLv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45px"
+                    android:layout_marginEnd="4px"
+                    android:text="LV1"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/barRecruitWeapon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0px"
+                    android:layout_marginTop="1px"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="40px"
+                    android:src="@drawable/magicbattleicon"
+                    android:background="@color/colorHalfWhite"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="150px"
+                    android:visibility="visible"
+                    android:src="@drawable/frame2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/barConfirmTicketIcon"
+                android:src="@drawable/yellow_ticket"
+                android:layout_width="53px"
+                android:layout_height="53px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/barConfirmTicketNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10px"
+                android:text="76"
+                android:textColor="@color/colorWhite"
+                android:textSize="38px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/temp27"
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginTop="15px"
+            android:background="@color/colorWhite"
+            app:layout_constraintStart_toEndOf="@id/characterRecyclerView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="10px"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/barRecruitCancel"
+                android:gravity="center"
+                android:text="取消"
+                android:textSize="40px"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/temp28"
+                android:layout_width="5px"
+                android:layout_height="50px"
+                android:background="@color/colorWhite"/>
+            <TextView
+                android:id="@+id/barRecruitConfirm"
+                android:gravity="center"
+                android:text="确认"
+                android:layout_weight="1"
+                android:textSize="40px"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

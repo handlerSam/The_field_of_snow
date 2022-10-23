@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/characterBackground"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/temp10"
+        android:layout_width="351px"
+        android:layout_height="284px"
+        android:src="@drawable/shade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/characterMovement"
+        android:layout_width="351px"
+        android:layout_height="284px"
+        android:src="@drawable/syrightmove"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </pl.droidsonroids.gif.GifImageView>
+
+    <TextView
+    android:id="@+id/hpBackground"
+    android:layout_width="100px"
+    android:layout_height="5px"
+    android:layout_marginStart="125px"
+    android:layout_marginTop="258px"
+    android:background="@color/colorHpBackground"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hpVirtual"
+        android:layout_width="85px"
+        android:layout_height="5px"
+        android:layout_marginStart="125px"
+        android:layout_marginTop="258px"
+        android:background="@color/colorHalfWhite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/hp"
+        android:layout_width="70px"
+        android:layout_height="5px"
+        android:layout_marginStart="125px"
+        android:layout_marginTop="258px"
+        android:background="@color/colorTrueHp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/skillBackground"
+        android:layout_width="100px"
+        android:layout_height="5px"
+        android:layout_marginStart="125px"
+        android:layout_marginTop="263px"
+        android:visibility="invisible"
+        android:background="@color/colorHpBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/skill"
+        android:layout_width="70px"
+        android:layout_height="5px"
+        android:layout_marginStart="125px"
+        android:layout_marginTop="263px"
+        android:visibility="invisible"
+        android:background="@color/colorSkill"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/characterChosenIcon"
+        android:layout_width="130px"
+        android:layout_height="70px"
+        android:visibility="invisible"
+        android:src="@drawable/onchosen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/characterSkillReady"
+        android:layout_width="30px"
+        android:layout_height="30px"
+        android:visibility="invisible"
+        android:src="@drawable/skillisready"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/clickRange"
+        android:layout_width="150px"
+        android:layout_height="60px"
+        android:layout_marginBottom="50px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

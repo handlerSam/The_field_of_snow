@@ -1,0 +1,1817 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/character_fragment_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="190px"
+            android:layout_height="95px"
+            android:layout_marginStart="50px"
+            android:layout_marginTop="25px"
+            android:orientation="horizontal"
+            android:background="@drawable/backbutton_shade"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <LinearLayout
+            android:id="@+id/backButton"
+            android:layout_width="180px"
+            android:layout_height="70px"
+            android:layout_marginStart="50px"
+            android:layout_marginTop="30px"
+            android:orientation="horizontal"
+            android:background="@color/colorSkillChargeBackground"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:layout_marginStart="15px"
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:src="@drawable/backarray" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/shade2"
+            android:layout_width="190px"
+            android:layout_height="95px"
+            android:layout_marginStart="50px"
+            android:layout_marginTop="25px"
+            android:orientation="horizontal"
+            android:background="@drawable/backbutton_shade"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toEndOf="@id/backButton"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/characterIconContinue"
+            android:layout_width="180px"
+            android:layout_height="70px"
+            android:layout_marginTop="30px"
+            android:layout_marginStart="50px"
+            android:gravity="center"
+            android:text="开始战斗"
+            android:textSize="35px"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorSkillChargeBackground"
+            app:layout_constraintStart_toEndOf="@id/backButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/shade3"
+            android:layout_width="190px"
+            android:layout_height="95px"
+            android:layout_marginStart="50px"
+            android:layout_marginTop="25px"
+            android:orientation="horizontal"
+            android:background="@drawable/backbutton_shade"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toEndOf="@id/characterIconContinue"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/characterIconChooseAll"
+            android:layout_width="180px"
+            android:layout_height="70px"
+            android:layout_marginTop="30px"
+            android:layout_marginStart="50px"
+            android:gravity="center"
+            android:text="全选"
+            android:textSize="35px"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorSkillChargeBackground"
+            app:layout_constraintStart_toEndOf="@id/characterIconContinue"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/characterIconChooseNumber"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px"
+            android:layout_marginEnd="230px"
+            android:text="队伍人数：5/12"
+            android:textSize="35px"
+            android:textColor="@color/colorYellow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/characterRecyclerView"
+            android:overScrollMode="never"
+            android:layout_width="600px"
+            android:layout_height="match_parent"
+            android:layout_marginStart="100px"
+            android:layout_marginTop="140px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/temp11"
+            android:layout_width="5px"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="60px"
+            android:layout_marginStart="30px"
+            android:background="@color/colorWhite"
+            app:layout_constraintStart_toEndOf="@id/characterRecyclerView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:src="@drawable/leftarrow2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/temp11"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <ScrollView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:layout_marginTop="140px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/temp11"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5px"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/characterIconImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="35px"
+                            android:adjustViewBounds="true"
+                            android:maxWidth="175px"
+                            android:src="@drawable/sx2icon"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/characterIconFrame"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="35px"
+                            android:adjustViewBounds="true"
+                            android:maxWidth="175px"
+                            android:src="@drawable/frame"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/characterIconText"
+                                android:layout_width="90px"
+                                android:layout_height="90px"
+                                android:layout_marginTop="35px"
+                                android:gravity="center"
+                                android:text="FN"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="60px"
+                                android:visibility="visible"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/characterIconFrame2"
+                                android:layout_width="90px"
+                                android:layout_height="90px"
+                                android:layout_marginTop="35px"
+                                android:src="@drawable/frame2"
+                                android:visibility="visible"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/characterIconState"
+                            android:layout_width="100px"
+                            android:layout_height="50px"
+                            android:layout_marginTop="30px"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/redrect"
+                            android:gravity="center"
+                            android:textSize="35px"
+                            android:text="濒危"
+                            android:textColor="@color/colorWhite" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/characterIconName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50px"
+                            android:layout_marginStart="15px"
+                            android:layout_marginTop="32px"
+                            android:singleLine="false"
+                            android:text="冰爆源石虫·α"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="40px"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <LinearLayout
+                            android:layout_marginTop="10px"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15px"
+                                android:layout_marginTop="5px">
+
+                                <ImageView
+                                    android:id="@+id/characterIconElite"
+                                    android:layout_width="90px"
+                                    android:layout_height="90px"
+                                    android:layout_marginStart="15px"
+                                    android:src="@drawable/elite2" />
+
+                                <ImageView
+                                    android:id="@+id/characterIconEliteUp"
+                                    android:layout_width="40px"
+                                    android:layout_height="40px"
+                                    android:layout_marginStart="75px"
+                                    android:layout_marginTop="60px"
+                                    android:src="@drawable/uparrow" />
+
+                            </FrameLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0px"
+                                android:orientation="vertical">
+
+                                <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginStart="10px"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent">
+
+                                    <TextView
+                                        android:id="@+id/characterIconLevel"
+                                        android:layout_width="120px"
+                                        android:layout_height="100px"
+                                        android:layout_marginTop="20px"
+                                        android:layout_marginStart="10px"
+                                        android:gravity="center_horizontal"
+                                        android:text="40"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="80px"
+                                        android:visibility="visible"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <ImageView
+                                        android:id="@+id/characterIconFrame3"
+                                        android:layout_width="120px"
+                                        android:layout_height="120px"
+                                        android:layout_marginStart="10px"
+                                        android:src="@drawable/frame"
+
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+                                </FrameLayout>
+
+                                <TextView
+                                    android:id="@+id/characterIconLV"
+                                    android:layout_width="40px"
+                                    android:layout_height="55px"
+                                    android:layout_marginStart="62px"
+                                    android:layout_marginTop="0px"
+                                    android:text="LV"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="35px"
+                                    android:visibility="visible"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_marginTop="55px"
+                                    android:layout_width="200px"
+                                    android:layout_height="75px">
+
+                                    <TextView
+                                        android:id="@+id/characterIconMaxLevel"
+                                        android:layout_width="80px"
+                                        android:layout_height="40px"
+                                        android:layout_marginStart="5px"
+                                        android:layout_marginTop="15px"
+                                        android:text="/90"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="35px"
+                                        android:visibility="visible" />
+
+                                    <ImageView
+                                        android:id="@+id/characterIconLevelUp"
+                                        android:layout_width="60px"
+                                        android:layout_height="60px"
+                                        android:layout_marginStart="5px"
+                                        android:layout_marginTop="5px"
+                                        android:src="@drawable/add" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:orientation="vertical"
+                        android:layout_width="200px"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/characterIconDismissIcon"
+                            android:layout_width="50px"
+                            android:layout_height="50px"
+                            android:layout_marginTop="90px"
+                            android:layout_marginStart="30px"
+                            android:src="@drawable/dismiss_icon"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <TextView
+                            android:id="@+id/characterIconDismiss"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50px"
+                            android:layout_marginStart="85px"
+                            android:layout_marginTop="86px"
+                            android:singleLine="false"
+                            android:text="解散"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="40px"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="175px"
+                        android:layout_height="150px"
+                        android:layout_marginStart="30px"
+                        android:background="@drawable/frame">
+
+                        <TextView
+                            android:id="@+id/characterIconHP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10px"
+                            android:text="耐久"
+                            android:textColor="@color/colorHalfWhite"
+                            android:textSize="35px" />
+
+                        <TextView
+                            android:id="@+id/characterIconHp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="50px"
+                            android:text="1428"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="65px" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="175px"
+                        android:layout_height="150px"
+                        android:layout_marginStart="30px"
+                        android:background="@drawable/frame">
+
+                        <TextView
+                            android:id="@+id/characterIconATTACK"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10px"
+                            android:text="攻击"
+                            android:textColor="@color/colorHalfWhite"
+                            android:textSize="35px" />
+
+                        <TextView
+                            android:id="@+id/characterIconAttack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="50px"
+                            android:text="586"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="65px" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="175px"
+                        android:layout_height="150px"
+                        android:layout_marginStart="30px"
+                        android:background="@drawable/frame">
+
+                        <TextView
+                            android:id="@+id/characterIconDEFEND"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10px"
+                            android:text="防御"
+                            android:textColor="@color/colorHalfWhite"
+                            android:textSize="35px" />
+
+                        <TextView
+                            android:id="@+id/characterIconDefend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="50px"
+                            android:text="113"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="65px" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="175px"
+                        android:layout_height="150px"
+                        android:layout_marginStart="30px"
+                        android:background="@drawable/frame">
+
+                        <TextView
+                            android:id="@+id/characterIconMAGICALDEFEND"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10px"
+                            android:text="法术抗性"
+                            android:textColor="@color/colorHalfWhite"
+                            android:textSize="35px" />
+
+                        <TextView
+                            android:id="@+id/characterIconMagicalDefend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="50px"
+                            android:text="25"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="65px" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="175px"
+                        android:layout_height="150px"
+                        android:layout_marginStart="30px"
+                        android:background="@drawable/frame">
+
+                        <TextView
+                            android:id="@+id/characterIconARRANGE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10px"
+                            android:text="攻击距离"
+                            android:textColor="@color/colorHalfWhite"
+                            android:textSize="35px" />
+
+                        <TextView
+                            android:id="@+id/characterIconArrange"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="50px"
+                            android:text="150"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="65px" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35px"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="175px"
+                        android:layout_height="150px"
+                        android:layout_marginStart="30px"
+                        android:background="@drawable/frame">
+
+                        <TextView
+                            android:id="@+id/characterIconRETREAT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10px"
+                            android:text="再部署"
+                            android:textColor="@color/colorHalfWhite"
+                            android:textSize="35px" />
+
+                        <TextView
+                            android:id="@+id/characterIconRetreat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="50px"
+                            android:text="90s"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="65px" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="175px"
+                        android:layout_height="150px"
+                        android:layout_marginStart="30px"
+                        android:background="@drawable/frame">
+
+                        <TextView
+                            android:id="@+id/characterIconCOST"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10px"
+                            android:text="部署费用"
+                            android:textColor="@color/colorHalfWhite"
+                            android:textSize="35px" />
+
+                        <TextView
+                            android:id="@+id/characterIconCost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="50px"
+                            android:text="37"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="65px" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="175px"
+                        android:layout_height="150px"
+                        android:layout_marginStart="30px"
+                        android:background="@drawable/frame">
+
+                        <TextView
+                            android:id="@+id/characterIconBLOCK"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10px"
+                            android:text="阻挡"
+                            android:textColor="@color/colorHalfWhite"
+                            android:textSize="35px" />
+
+                        <TextView
+                            android:id="@+id/characterIconBlock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="50px"
+                            android:text="2"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="65px" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="175px"
+                        android:layout_height="150px"
+                        android:layout_marginStart="30px"
+                        android:background="@drawable/frame">
+
+                        <TextView
+                            android:id="@+id/characterIconSPEED"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10px"
+                            android:text="移动速度"
+                            android:textColor="@color/colorHalfWhite"
+                            android:textSize="35px" />
+
+                        <TextView
+                            android:id="@+id/characterIconSpeed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="50px"
+                            android:text="10"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="65px" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="175px"
+                        android:layout_height="150px"
+                        android:layout_marginStart="30px"
+                        android:background="@drawable/frame">
+
+                        <TextView
+                            android:id="@+id/characterIconRETREATABLE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10px"
+                            android:text="能否撤退"
+                            android:textColor="@color/colorHalfWhite"
+                            android:textSize="35px" />
+
+                        <TextView
+                            android:id="@+id/characterIconRetreatable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="80px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="50px"
+                            android:text="true"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="65px" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/characterIconSkillImage"
+                            android:layout_width="125px"
+                            android:layout_height="125px"
+                            android:layout_marginStart="35px"
+                            android:layout_marginTop="35px"
+                            android:layout_marginEnd="20px"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/skillattack1"
+                            android:maxWidth="125px"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/characterIconFrame5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="35px"
+                            android:layout_marginTop="35px"
+                            android:layout_marginEnd="20px"
+                            android:adjustViewBounds="true"
+                            android:maxWidth="125px"
+                            android:src="@drawable/frame"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/characterIconLighting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="58px"
+                            android:layout_marginTop="152px"
+                            android:adjustViewBounds="true"
+                            android:maxWidth="38px"
+                            android:src="@drawable/lightening"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/characterIconSkillPoint"
+                            android:layout_width="84px"
+                            android:layout_height="38px"
+                            android:layout_marginStart="88px"
+                            android:layout_marginTop="152px"
+                            android:background="@drawable/grey4rect"
+                            android:gravity="center"
+                            android:text="30/60"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="26px" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="160px"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/characterIconSkillName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60px"
+                            android:layout_marginTop="30px"
+                            android:text="攻击·α"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="45px" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="60px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/characterIconSkillIncreasingMethod"
+                                android:layout_width="140px"
+                                android:layout_height="40px"
+                                android:layout_marginTop="20px"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/greenrect"
+                                android:gravity="center"
+                                android:text="自动回复"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="30px" />
+
+                            <TextView
+                                android:id="@+id/characterIconSkillAutoRelease"
+                                android:layout_width="140px"
+                                android:layout_height="40px"
+                                android:layout_marginTop="20px"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/grey3rect"
+                                android:gravity="center"
+                                android:text="自动触发"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="30px" />
+
+                            <LinearLayout
+                                android:layout_width="90px"
+                                android:layout_height="40px"
+                                android:layout_marginTop="20px"
+                                android:background="@drawable/greyrect"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/characterIconClock"
+                                    android:layout_width="35px"
+                                    android:layout_height="35px"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/clock" />
+
+                                <TextView
+                                    android:id="@+id/characterIconSkillDuration"
+                                    android:layout_width="50px"
+                                    android:layout_height="40px"
+                                    android:text="15s"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="28px" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/characterIconSkillIllustration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60px"
+                    android:layout_marginStart="35px"
+                    android:layout_marginTop="15px"
+                    android:text="攻击力+45%"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30px" />
+
+                <LinearLayout
+                    android:id="@+id/equipmentSquareLayout"
+                    android:background="@drawable/card_icon"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginTop="30px"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <com.example.myapplication.EquipmentSquare
+                            android:id="@+id/characterIconWeaponSquare"
+                            android:layout_marginStart="40px"
+                            android:layout_marginEnd="30px"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        </com.example.myapplication.EquipmentSquare>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="30px"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/characterIconWeaponLayout"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:id="@+id/characterIconWeaponIcon"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/sx2icon"
+                                    android:layout_width="90px"
+                                    android:layout_height="90px"/>
+                                <ImageView
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/frame2"
+                                    android:layout_width="90px"
+                                    android:layout_height="90px"/>
+                                <TextView
+                                    android:id="@+id/characterIconWeaponQuality"
+                                    android:layout_width="60px"
+                                    android:layout_height="30px"
+                                    android:layout_marginTop="70px"
+                                    android:layout_marginStart="40px"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/bluerect"
+                                    android:gravity="center"
+                                    android:text="稀有"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20px" />
+                            </FrameLayout>
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_marginStart="5px"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:id="@+id/characterIconWeaponName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="50px"
+                                        android:singleLine="false"
+                                        android:text="增强型狙击步枪"
+                                        android:textColor="@color/colorYellow"
+                                        android:textSize="40px"
+                                        android:visibility="visible"/>
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/characterIconWeaponIllustration"
+                                    android:layout_marginTop="0px"
+                                    android:layout_marginStart="10px"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="60px"
+                                    android:singleLine="false"
+                                    android:text="攻击力+35%"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="30px"
+                                    android:visibility="visible"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/characterIconArmorLayout"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:id="@+id/characterIconArmorIcon"
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/sx2icon"
+                                    android:layout_width="90px"
+                                    android:layout_height="90px"/>
+                                <ImageView
+                                    android:adjustViewBounds="true"
+                                    android:src="@drawable/frame2"
+                                    android:layout_width="90px"
+                                    android:layout_height="90px"/>
+                                <TextView
+                                    android:id="@+id/characterIconArmorQuality"
+                                    android:layout_width="60px"
+                                    android:layout_height="30px"
+                                    android:layout_marginTop="70px"
+                                    android:layout_marginStart="40px"
+                                    android:adjustViewBounds="true"
+                                    android:background="@drawable/greenrect"
+                                    android:gravity="center"
+                                    android:text="普通"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20px" />
+                            </FrameLayout>
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_marginStart="5px"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:id="@+id/characterIconArmorName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="50px"
+                                        android:singleLine="false"
+                                        android:text="坚固皮甲"
+                                        android:textColor="@color/colorBlue"
+                                        android:textSize="40px"
+                                        android:visibility="visible"/>
+                                </LinearLayout>
+                                <TextView
+                                    android:id="@+id/characterIconArmorIllustration"
+                                    android:layout_marginTop="0px"
+                                    android:layout_marginStart="10px"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="60px"
+                                    android:singleLine="false"
+                                    android:text="防御力+20%"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="30px"
+                                    android:visibility="visible"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <FrameLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140px"
+        android:layout_marginEnd="50px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--ImageView
+            android:id="@+id/characterIconWeapon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0px"
+            android:layout_marginTop="0px"
+            android:adjustViewBounds="true"
+            android:maxWidth="120px"
+            android:src="@drawable/frame"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" /-->
+
+        <ImageView
+            android:id="@+id/characterIconWeapon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:alpha="0.1"
+            android:maxWidth="200px"
+            android:src="@drawable/magicicon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/characterIconShade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorUnavailable"
+        android:visibility="invisible" />
+    <TextView
+        android:id="@+id/characterIconButton"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:layout_marginEnd="40px"
+        android:text="查看编队"
+        android:textSize="35px"
+        android:soundEffectsEnabled="false"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/characterIconChooseColumn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/characterIconEquipmentChoose"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/characterIconShade2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorShade"
+            android:visibility="visible" />
+        <com.example.myapplication.EquipmentSquare
+
+            android:id="@+id/equipmentSquare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/temp20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@id/equipmentSquare"
+            app:layout_constraintStart_toStartOf="@id/equipmentSquare"
+            app:layout_constraintTop_toBottomOf="@id/equipmentSquare">
+
+            <TextView
+                android:id="@+id/equipmentSquareWeaponChangePosition"
+                android:layout_width="160px"
+                android:layout_height="40px"
+                android:adjustViewBounds="true"
+                android:background="@drawable/greyrect"
+                android:gravity="center"
+                android:text="改变武器位置"
+                android:textColor="@color/colorWhite"
+                android:textSize="25px" />
+            <TextView
+                android:id="@+id/equipmentSquareArmorChangePosition"
+                android:layout_width="160px"
+                android:layout_height="40px"
+                android:layout_marginStart="35px"
+                android:adjustViewBounds="true"
+                android:background="@drawable/greyrect"
+                android:gravity="center"
+                android:text="改变装备位置"
+                android:textColor="@color/colorWhite"
+                android:textSize="25px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/equipmentSquareBack"
+            android:layout_width="120px"
+            android:layout_height="45px"
+            android:layout_marginTop="20px"
+            android:layout_marginEnd="0px"
+            android:adjustViewBounds="true"
+            android:background="@drawable/greyrect"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/colorWhite"
+            android:textSize="30px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/temp20" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/characterIconArmorList"
+            android:layout_width="600px"
+            android:layout_marginTop="140px"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/equipmentSquare" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0px"
+            android:layout_marginBottom="10px"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/characterIconWeaponList"
+            app:layout_constraintEnd_toEndOf="@id/characterIconWeaponList"
+            app:layout_constraintStart_toStartOf="@id/characterIconWeaponList">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50px"
+                android:singleLine="false"
+                android:text="武器："
+                android:textColor="@color/colorWhite"
+                android:textSize="40px" />
+            <TextView
+                android:id="@+id/weaponIconQuality5"
+                android:layout_width="80px"
+                android:layout_height="36px"
+                android:layout_marginStart="25px"
+                android:adjustViewBounds="true"
+                android:background="@drawable/orangerect"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@color/colorWhite"
+                android:textSize="28px" />
+            <TextView
+                android:id="@+id/weaponIconQuality0"
+                android:layout_width="80px"
+                android:layout_height="36px"
+                android:layout_marginStart="25px"
+                android:adjustViewBounds="true"
+                android:background="@drawable/greyrect"
+                android:gravity="center"
+                android:text="缺陷"
+                android:textColor="@color/colorWhite"
+                android:textSize="28px" />
+            <TextView
+                android:id="@+id/weaponIconQuality1"
+                android:layout_width="80px"
+                android:layout_height="36px"
+                android:layout_marginStart="20px"
+                android:adjustViewBounds="true"
+                android:background="@drawable/greenrect"
+                android:gravity="center"
+                android:text="普通"
+                android:textColor="@color/colorWhite"
+                android:textSize="28px" />
+            <TextView
+                android:id="@+id/weaponIconQuality2"
+                android:layout_width="80px"
+                android:layout_height="36px"
+                android:layout_marginStart="20px"
+                android:adjustViewBounds="true"
+                android:background="@drawable/bluerect"
+                android:gravity="center"
+                android:text="标准"
+                android:textColor="@color/colorWhite"
+                android:textSize="28px" />
+            <TextView
+                android:id="@+id/weaponIconQuality3"
+                android:layout_width="80px"
+                android:layout_height="36px"
+                android:layout_marginStart="20px"
+                android:adjustViewBounds="true"
+                android:background="@drawable/pinkrect"
+                android:gravity="center"
+                android:text="优良"
+                android:textColor="@color/colorWhite"
+                android:textSize="28px" />
+            <TextView
+                android:id="@+id/weaponIconQuality4"
+                android:layout_width="80px"
+                android:layout_height="36px"
+                android:layout_marginStart="20px"
+                android:adjustViewBounds="true"
+                android:background="@drawable/yellowrect"
+                android:gravity="center"
+                android:text="卓越"
+                android:textColor="@color/colorWhite"
+                android:textSize="28px" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0px"
+            android:layout_marginBottom="10px"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/characterIconArmorList"
+            app:layout_constraintEnd_toEndOf="@id/characterIconArmorList"
+            app:layout_constraintStart_toStartOf="@id/characterIconArmorList">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50px"
+                android:singleLine="false"
+                android:text="防具："
+                android:textColor="@color/colorWhite"
+                android:textSize="40px" />
+            <TextView
+                android:id="@+id/armorIconQuality5"
+                android:layout_width="80px"
+                android:layout_height="36px"
+                android:layout_marginStart="25px"
+                android:adjustViewBounds="true"
+                android:background="@drawable/orangerect"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@color/colorWhite"
+                android:textSize="28px" />
+            <TextView
+                android:id="@+id/armorIconQuality0"
+                android:layout_width="80px"
+                android:layout_height="36px"
+                android:layout_marginStart="25px"
+                android:adjustViewBounds="true"
+                android:background="@drawable/greyrect"
+                android:gravity="center"
+                android:text="缺陷"
+                android:textColor="@color/colorWhite"
+                android:textSize="28px" />
+            <TextView
+                android:id="@+id/armorIconQuality1"
+                android:layout_width="80px"
+                android:layout_height="36px"
+                android:layout_marginStart="20px"
+                android:adjustViewBounds="true"
+                android:background="@drawable/greenrect"
+                android:gravity="center"
+                android:text="普通"
+                android:textColor="@color/colorWhite"
+                android:textSize="28px" />
+            <TextView
+                android:id="@+id/armorIconQuality2"
+                android:layout_width="80px"
+                android:layout_height="36px"
+                android:layout_marginStart="20px"
+                android:adjustViewBounds="true"
+                android:background="@drawable/bluerect"
+                android:gravity="center"
+                android:text="标准"
+                android:textColor="@color/colorWhite"
+                android:textSize="28px" />
+            <TextView
+                android:id="@+id/armorIconQuality3"
+                android:layout_width="80px"
+                android:layout_height="36px"
+                android:layout_marginStart="20px"
+                android:adjustViewBounds="true"
+                android:background="@drawable/pinkrect"
+                android:gravity="center"
+                android:text="优良"
+                android:textColor="@color/colorWhite"
+                android:textSize="28px" />
+            <TextView
+                android:id="@+id/armorIconQuality4"
+                android:layout_width="80px"
+                android:layout_height="36px"
+                android:layout_marginStart="20px"
+                android:adjustViewBounds="true"
+                android:background="@drawable/yellowrect"
+                android:gravity="center"
+                android:text="卓越"
+                android:textColor="@color/colorWhite"
+                android:textSize="28px" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/characterIconWeaponList"
+            android:layout_width="600px"
+            android:layout_marginTop="140px"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/equipmentSquare" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/characterIconShade3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorHalfBlack"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/characterIconLevelUpLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:background="@drawable/card_icon"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:text="是否确认升级干员"
+            android:textColor="@color/colorWhite"
+            android:textSize="50px" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="40px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="等级提升"
+                android:textColor="@color/colorWhite"
+                android:textSize="46px" />
+            <LinearLayout
+                android:id="@+id/characterIconMin"
+                android:layout_width="140px"
+                android:layout_height="80px"
+                android:gravity="center"
+                android:layout_marginLeft="40px"
+                android:background="@color/colorgray4">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最少"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="45px" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/characterIconReduce"
+                android:layout_width="130px"
+                android:layout_height="80px"
+                android:gravity="center"
+                android:background="@color/colorgray3">
+                <TextView
+                    android:layout_marginBottom="10px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="—"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="60px" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="370px"
+                android:layout_height="80px"
+                android:gravity="center"
+                android:background="@color/colorHalfWhite">
+                <TextView
+                    android:id="@+id/characterIconLevelText"
+                    android:layout_marginBottom="0px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lv 50 -> Lv 90"
+                    android:textColor="@color/colorHalfBlack"
+                    android:textSize="50px" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/characterIconAdd"
+                android:layout_width="130px"
+                android:layout_height="80px"
+                android:gravity="center"
+                android:background="@color/colorgray3">
+                <TextView
+                    android:layout_marginBottom="10px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="60px" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/characterIconMax"
+                android:layout_width="140px"
+                android:layout_height="80px"
+                android:gravity="center"
+                android:background="@color/colorgray4">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="最多"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="45px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="40px"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+            android:src="@drawable/item_exp1"
+            android:layout_width="120px"
+            android:layout_height="80px"/>
+            <TextView
+                android:id="@+id/exp1Number"
+                android:text="X10"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40px"/>
+            <ImageView
+                android:src="@drawable/item_exp2"
+                android:layout_width="120px"
+                android:layout_height="80px"/>
+            <TextView
+                android:id="@+id/exp2Number"
+                android:text="X10"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40px"/>
+            <ImageView
+                android:src="@drawable/item_exp3"
+                android:layout_width="120px"
+                android:layout_height="80px"/>
+            <TextView
+                android:id="@+id/exp3Number"
+                android:text="X10"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40px"/>
+            <ImageView
+                android:src="@drawable/item_exp4"
+                android:layout_width="120px"
+                android:layout_height="80px"/>
+            <TextView
+                android:id="@+id/exp4Number"
+                android:text="X10"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40px"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/characterLevelUpAbilityChangeTextView"
+            android:layout_marginTop="10px"
+            android:gravity="center"
+            android:text="耐久 2999 -> 5000      攻击 100 -> 140      防御 290 -> 500  "
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:id="@+id/temp25"
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginTop="15px"
+            android:background="@color/colorWhite"
+            app:layout_constraintStart_toEndOf="@id/characterRecyclerView"
+            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="10px"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/characterIconLevelCancel"
+                android:gravity="center"
+                android:text="取消"
+                android:textSize="40px"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/temp26"
+                android:layout_width="5px"
+                android:layout_height="50px"
+                android:background="@color/colorWhite"/>
+            <TextView
+                android:id="@+id/characterIconLevelConfirm"
+                android:gravity="center"
+                android:text="确认"
+                android:layout_weight="1"
+                android:textSize="40px"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/characterIconPromotionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:background="@drawable/card_icon"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:text="是否确认晋升干员"
+            android:textColor="@color/colorWhite"
+            android:textSize="50px" />
+
+    <LinearLayout
+        android:layout_marginTop="20px"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/characterIconPromotionBeforeLevel"
+                android:text="1"
+                android:textSize="62px"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="78px"/>
+            <TextView
+                android:gravity="center"
+                android:text="精英阶段"
+                android:textSize="35px"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="42px"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/eliteBeforeImageView"
+            android:src="@drawable/elite1"
+            android:layout_width="120px"
+            android:layout_height="120px"/>
+        <ImageView
+            android:src="@drawable/arrow"
+            android:layout_marginLeft="70px"
+            android:layout_marginRight="70px"
+            android:layout_width="60px"
+            android:layout_height="60px"/>
+        <ImageView
+            android:id="@+id/eliteAfterImageView"
+            android:src="@drawable/elite2"
+            android:layout_width="120px"
+            android:layout_height="120px"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/characterIconPromotionAfterLevel"
+                android:text="2"
+                android:textSize="62px"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="78px"/>
+            <TextView
+                android:gravity="center"
+                android:text="精英阶段"
+                android:textSize="35px"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="42px"/>
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="40px"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/item1ImageView"
+                android:src="@drawable/item_bmc"
+                android:layout_width="120px"
+                android:layout_height="120px"/>
+            <TextView
+                android:id="@+id/item1Number"
+                android:text=" X10 / 20 "
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="40px"/>
+            <ImageView
+                android:id="@+id/item2ImageView"
+                android:src="@drawable/item_d32g"
+                android:layout_width="120px"
+                android:layout_height="120px"/>
+            <TextView
+                android:id="@+id/item2Number"
+                android:text=" X10 / 20 "
+                android:textColor="@color/colorRed"
+                android:background="@color/colorLightBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15px"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/temp27"
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginTop="15px"
+            android:background="@color/colorWhite"
+            app:layout_constraintStart_toEndOf="@id/characterRecyclerView"
+            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="10px"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/characterIconPromotionCancel"
+                android:gravity="center"
+                android:text="取消"
+                android:textSize="40px"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/temp28"
+                android:layout_width="5px"
+                android:layout_height="50px"
+                android:background="@color/colorWhite"/>
+            <TextView
+                android:id="@+id/characterIconPromotionConfirm"
+                android:gravity="center"
+                android:text="确认"
+                android:layout_weight="1"
+                android:textSize="40px"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/characterIconShade6"
+        android:visibility="invisible"
+        android:background="@color/colorPauseShade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:id="@+id/characterIconDismissConfirmLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:background="@drawable/card_icon"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:text="是否确认解散干员？"
+            android:textColor="@color/colorWhite"
+            android:textSize="50px" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginVertical="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/temp33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/characterDismissIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="150px"
+                    android:src="@drawable/agzicon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/characterDismissElite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="60px"
+                    android:src="@drawable/elite0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/characterDismissLv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45px"
+                    android:layout_marginEnd="4px"
+                    android:text="LV1"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/characterDismissWeapon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0px"
+                    android:layout_marginTop="1px"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="40px"
+                    android:src="@drawable/magicbattleicon"
+                    android:background="@color/colorHalfWhite"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="150px"
+                    android:visibility="visible"
+                    android:src="@drawable/frame2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/temp46"
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginTop="15px"
+            android:background="@color/colorWhite"
+            app:layout_constraintStart_toEndOf="@id/characterRecyclerView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="10px"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/characterIconDismissCancel"
+                android:gravity="center"
+                android:text="取消"
+                android:textSize="40px"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/temp47"
+                android:layout_width="5px"
+                android:layout_height="50px"
+                android:background="@color/colorWhite"/>
+            <TextView
+                android:id="@+id/characterIconDismissConfirm"
+                android:gravity="center"
+                android:text="确认"
+                android:layout_weight="1"
+                android:textSize="40px"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

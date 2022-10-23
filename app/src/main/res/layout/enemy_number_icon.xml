@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/temp5"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@color/colorShade">
+    <TextView
+        android:id="@+id/temp6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:layout_marginBottom="3px"
+        android:textSize="40px"
+        android:text="  |    "/>
+    <ImageView
+        android:id="@+id/temp7"
+        android:layout_width="65px"
+        android:layout_height="65px"
+        android:background="@drawable/enemyicon"/>
+    <TextView
+        android:id="@+id/enemyNumberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorEnemyNumber"
+        android:gravity="center"
+        android:layout_marginLeft="10px"
+        android:textSize="40px"
+        android:text="35/35"/>
+    <TextView
+        android:id="@+id/temp8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:textSize="40px"
+        android:layout_marginBottom="3px"
+        android:text="    |  "/>
+</LinearLayout>

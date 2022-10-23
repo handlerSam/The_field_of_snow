@@ -1,0 +1,1312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/stage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_layer4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_layer3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_layer2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_layer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/temp22"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="3dp">
+
+
+        <ImageView
+            android:id="@+id/shade_00"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150px"
+            android:layout_marginTop="575px"
+            android:src="@drawable/shade_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/shade_10"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250px"
+            android:layout_marginTop="0px"
+            android:src="@drawable/shade_small"
+            app:layout_constraintStart_toStartOf="@id/shade_00"
+            app:layout_constraintTop_toTopOf="@id/shade_00" />
+
+        <ImageView
+            android:id="@+id/shade_20"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="500px"
+            android:layout_marginTop="0px"
+            android:src="@drawable/shade_small"
+            app:layout_constraintStart_toStartOf="@id/shade_00"
+            app:layout_constraintTop_toTopOf="@id/shade_00" />
+
+        <ImageView
+            android:id="@+id/shade_30"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="750px"
+            android:layout_marginTop="0px"
+            android:src="@drawable/shade_small"
+            app:layout_constraintStart_toStartOf="@id/shade_00"
+            app:layout_constraintTop_toTopOf="@id/shade_00" />
+
+        <ImageView
+            android:id="@+id/shade_40"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1000px"
+            android:layout_marginTop="0px"
+            android:src="@drawable/shade_small"
+            app:layout_constraintStart_toStartOf="@id/shade_00"
+            app:layout_constraintTop_toTopOf="@id/shade_00" />
+
+        <ImageView
+            android:id="@+id/shade_01"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0px"
+            android:layout_marginTop="100px"
+            android:src="@drawable/shade_small"
+            app:layout_constraintStart_toStartOf="@id/shade_00"
+            app:layout_constraintTop_toTopOf="@id/shade_00" />
+
+        <ImageView
+            android:id="@+id/shade_11"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250px"
+            android:layout_marginTop="100px"
+            android:src="@drawable/shade_small"
+            app:layout_constraintStart_toStartOf="@id/shade_00"
+            app:layout_constraintTop_toTopOf="@id/shade_00" />
+
+        <ImageView
+            android:id="@+id/shade_21"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="500px"
+            android:layout_marginTop="100px"
+            android:src="@drawable/shade_small"
+            app:layout_constraintStart_toStartOf="@id/shade_00"
+            app:layout_constraintTop_toTopOf="@id/shade_00" />
+
+        <ImageView
+            android:id="@+id/shade_31"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="750px"
+            android:layout_marginTop="100px"
+            android:src="@drawable/shade_small"
+            app:layout_constraintStart_toStartOf="@id/shade_00"
+            app:layout_constraintTop_toTopOf="@id/shade_00" />
+
+        <ImageView
+            android:id="@+id/shade_41"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1000px"
+            android:layout_marginTop="100px"
+            android:src="@drawable/shade_small"
+            app:layout_constraintStart_toStartOf="@id/shade_00"
+            app:layout_constraintTop_toTopOf="@id/shade_00" />
+
+        <ImageView
+            android:id="@+id/shade_02"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0px"
+            android:layout_marginTop="200px"
+            android:src="@drawable/shade_small"
+            app:layout_constraintStart_toStartOf="@id/shade_00"
+            app:layout_constraintTop_toTopOf="@id/shade_00" />
+
+        <ImageView
+            android:id="@+id/shade_12"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250px"
+            android:layout_marginTop="200px"
+            android:src="@drawable/shade_small"
+            app:layout_constraintStart_toStartOf="@id/shade_00"
+            app:layout_constraintTop_toTopOf="@id/shade_00" />
+
+        <ImageView
+            android:id="@+id/shade_22"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="500px"
+            android:layout_marginTop="200px"
+            android:src="@drawable/shade_small"
+            app:layout_constraintStart_toStartOf="@id/shade_00"
+            app:layout_constraintTop_toTopOf="@id/shade_00" />
+
+        <ImageView
+            android:id="@+id/shade_32"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="750px"
+            android:layout_marginTop="200px"
+            android:src="@drawable/shade_small"
+            app:layout_constraintStart_toStartOf="@id/shade_00"
+            app:layout_constraintTop_toTopOf="@id/shade_00" />
+
+        <ImageView
+            android:id="@+id/shade_42"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1000px"
+            android:layout_marginTop="200px"
+            android:src="@drawable/shade_small"
+            app:layout_constraintStart_toStartOf="@id/shade_00"
+            app:layout_constraintTop_toTopOf="@id/shade_00" />
+
+        <ImageView
+            android:id="@+id/shade_03"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0px"
+            android:layout_marginTop="300px"
+            android:src="@drawable/shade_small"
+            app:layout_constraintStart_toStartOf="@id/shade_00"
+            app:layout_constraintTop_toTopOf="@id/shade_00" />
+
+        <ImageView
+            android:id="@+id/shade_13"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250px"
+            android:layout_marginTop="300px"
+            android:src="@drawable/shade_small"
+            app:layout_constraintStart_toStartOf="@id/shade_00"
+            app:layout_constraintTop_toTopOf="@id/shade_00" />
+
+        <ImageView
+            android:id="@+id/shade_23"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="500px"
+            android:layout_marginTop="300px"
+            android:src="@drawable/shade_small"
+            app:layout_constraintStart_toStartOf="@id/shade_00"
+            app:layout_constraintTop_toTopOf="@id/shade_00" />
+
+        <ImageView
+            android:id="@+id/shade_33"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="750px"
+            android:layout_marginTop="300px"
+            android:src="@drawable/shade_small"
+            app:layout_constraintStart_toStartOf="@id/shade_00"
+            app:layout_constraintTop_toTopOf="@id/shade_00" />
+
+        <ImageView
+            android:id="@+id/shade_43"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1000px"
+            android:layout_marginTop="300px"
+            android:src="@drawable/shade_small"
+            app:layout_constraintStart_toStartOf="@id/shade_00"
+            app:layout_constraintTop_toTopOf="@id/shade_00" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/itemColumn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <FrameLayout
+            android:id="@+id/menuTeamLayout"
+            android:layout_margin="10px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="360px"
+                android:layout_height="75px"
+                android:background="@drawable/fast_team_made"/>
+            <TextView
+                android:id="@+id/menuTeam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150px"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorWhite"
+                android:textSize="36px"
+                android:text="第一编队"/>
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/placeEventButtonLayout"
+            android:layout_marginStart="10px"
+            android:layout_marginTop="20px"
+            android:orientation="horizontal"
+            android:layout_width="359px"
+            android:layout_height="80px"
+            android:background="@drawable/place_detail_icon">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100px"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorWhite"
+                android:textSize="36px"
+                android:text="地点详情"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="50px"
+                android:layout_width="50px"
+                android:layout_height="50px">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/hex_icon" />
+
+                <TextView
+                    android:id="@+id/placeEventNumberTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="25px"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+        <!--androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginStart="35px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="5px">
+
+            <ImageView
+                android:layout_width="150px"
+                android:layout_height="50px"
+                android:src="@color/colorQuarterBlack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:src="@drawable/food"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/menuFoodNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5px"
+                android:text="7600"
+                android:textColor="@color/colorWhite"
+                android:textSize="32px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginStart="35px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="5px">
+
+            <ImageView
+                android:layout_width="150px"
+                android:layout_height="50px"
+                android:src="@color/colorQuarterBlack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:src="@drawable/wine"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/menuWineNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5px"
+                android:text="7600"
+                android:textColor="@color/colorWhite"
+                android:textSize="32px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout-->
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/mapIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorShade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_margin="0px"
+            android:src="@drawable/map_icon" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorShade"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/mapIcon"
+        app:layout_constraintEnd_toStartOf="@id/mapIcon"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3px"
+            android:gravity="center"
+            android:text="  |  "
+            android:textColor="@color/colorWhite"
+            android:textSize="57px" />
+
+        <TextView
+            android:id="@+id/SiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:width="150px"
+            android:gravity="center"
+            android:text="大空洞附近"
+            android:textColor="@color/colorWhite"
+            android:textSize="30px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3px"
+            android:gravity="center"
+            android:text="  | "
+            android:textColor="@color/colorWhite"
+            android:textSize="57px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/colorShade"
+        app:layout_constraintBottom_toBottomOf="@+id/mapIcon"
+        app:layout_constraintStart_toEndOf="@+id/mapIcon"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3px"
+            android:gravity="center"
+            android:text=" |  "
+            android:textColor="@color/colorWhite"
+            android:textSize="57px" />
+
+        <TextView
+            android:id="@+id/XYText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:width="150px"
+            android:gravity="center"
+            android:text="X=60,Y=24"
+            android:textColor="@color/colorWhite"
+            android:textSize="30px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3px"
+            android:gravity="center"
+            android:text="  |  "
+            android:textColor="@color/colorWhite"
+            android:textSize="57px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item2Column"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginEnd="50px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="5px">
+
+            <ImageView
+                android:layout_width="130px"
+                android:layout_height="50px"
+                android:src="@color/colorQuarterBlack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:src="@drawable/source"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/menuSourceNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5px"
+                android:text="220"
+                android:textColor="@color/colorWhite"
+                android:textSize="32px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginEnd="50px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="5px">
+
+            <ImageView
+                android:layout_width="130px"
+                android:layout_height="50px"
+                android:src="@color/colorQuarterBlack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:src="@drawable/source_ingot"
+                android:layout_width="45px"
+                android:layout_height="45px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/menuSourceIngotNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5px"
+                android:text="76"
+                android:textColor="@color/colorWhite"
+                android:textSize="32px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginEnd="50px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="5px">
+
+            <ImageView
+                android:layout_width="160px"
+                android:layout_height="50px"
+                android:src="@color/colorQuarterBlack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:src="@drawable/item_hcy"
+                android:layout_width="55px"
+                android:layout_height="55px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/menuHCYNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5px"
+                android:text="7600"
+                android:textColor="@color/colorWhite"
+                android:textSize="32px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/teamManage"
+        android:layout_width="260px"
+        android:layout_height="90px"
+        android:layout_marginStart="20px"
+        android:layout_marginBottom="20px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <ImageView
+            android:src="@drawable/team_manage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:text="编辑队伍"
+            android:textColor="@color/colorWhite"
+            android:textSize="39px"
+            android:layout_marginStart="84px"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/toCharacterFragment"
+        android:layout_width="228px"
+        android:layout_height="70px"
+        android:layout_marginStart="32px"
+        android:layout_marginBottom="30px"
+        android:background="@drawable/grey4rect"
+        app:layout_constraintStart_toEndOf="@id/teamManage"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="63px"
+            android:layout_height="63px"
+            android:src="@drawable/team_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="63px"
+            android:gravity="center_vertical"
+            android:text="详细信息"
+            android:textColor="@color/colorWhite"
+            android:textSize="39px" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/toBagFragment"
+        android:layout_width="252px"
+        android:layout_height="70px"
+        android:layout_marginEnd="40px"
+        android:layout_marginBottom="30px"
+        android:background="@drawable/grey4rect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_marginStart="7px"
+            android:layout_gravity="center_vertical"
+            android:layout_width="63px"
+            android:layout_height="63px"
+            android:src="@drawable/bagicon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="77px"
+            android:gravity="center_vertical"
+            android:text="物资储备"
+            android:textColor="@color/colorWhite"
+            android:textSize="39px" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/characterDetailInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/right_shade"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/characterIconImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35px"
+                    android:layout_marginTop="35px"
+                    android:layout_marginEnd="15px"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="150px"
+                    android:src="@drawable/sx2icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/characterIconFrame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35px"
+                    android:layout_marginTop="35px"
+                    android:layout_marginEnd="15px"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="150px"
+                    android:src="@drawable/frame"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/characterIconName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50px"
+                    android:layout_marginStart="0px"
+                    android:layout_marginTop="32px"
+                    android:singleLine="false"
+                    android:text="冰爆源石虫·α"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30px"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/characterIconElite"
+                        android:layout_width="90px"
+                        android:layout_height="90px"
+                        android:layout_marginStart="0px"
+                        android:src="@drawable/elite2" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/characterIconLV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55px"
+                            android:layout_marginStart="15px"
+                            android:layout_marginTop="0px"
+                            android:text="LV 40"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="30px"
+                            android:visibility="visible"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/characterIconState"
+                            android:layout_width="70px"
+                            android:layout_height="35px"
+                            android:layout_marginStart="15px"
+                            android:layout_marginTop="5px"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/redrect"
+                            android:gravity="center"
+                            android:text="濒危"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="25px" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10px"
+                android:layout_marginTop="30px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/stateColumnHp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8px"
+                    android:text="生命  1387/1387"
+                    android:textColor="@color/colorHalfWhite"
+                    android:textSize="25px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/stateColumnAttack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8px"
+                    android:text="攻击  485"
+                    android:textColor="@color/colorHalfWhite"
+                    android:textSize="25px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/stateColumnDefend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8px"
+                    android:text="防御  353"
+                    android:textColor="@color/colorHalfWhite"
+                    android:textSize="25px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/stateColumnMagicalDefend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8px"
+                    android:text="法抗  10"
+                    android:textColor="@color/colorHalfWhite"
+                    android:textSize="25px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/stateColumnBlock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8px"
+                    android:layout_marginBottom="5px"
+                    android:text="阻挡  3"
+                    android:textColor="@color/colorHalfWhite"
+                    android:textSize="25px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="170px"
+                android:layout_height="190px"
+                android:layout_marginStart="30px"
+                android:layout_marginTop="30px"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.example.myapplication.EquipmentSquare
+                    android:id="@+id/characterIconWeaponSquare"
+                    android:visibility="gone"
+                    android:layout_width="170px"
+                    android:layout_height="190px"
+                    android:layout_marginStart="15px"
+                    android:layout_marginEnd="15px"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/equipmentSquareLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0px"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/characterIconWeaponLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:layout_marginStart="50px"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/characterIconWeaponIcon"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/sx2icon" />
+
+                        <ImageView
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/frame2" />
+
+                        <TextView
+                            android:id="@+id/characterIconWeaponQuality"
+                            android:layout_width="40px"
+                            android:layout_height="20px"
+                            android:layout_marginStart="40px"
+                            android:layout_marginTop="50px"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/bluerect"
+                            android:gravity="center"
+                            android:text="稀有"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="15px" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-5px"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/characterIconWeaponName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="增强型狙击步枪"
+                                android:textColor="@color/colorYellow"
+                                android:textSize="25px"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/characterIconWeaponIllustration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10px"
+                            android:layout_marginTop="0px"
+                            android:singleLine="true"
+                            android:text="攻击力+35%"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20px"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/characterIconArmorLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50px"
+                    android:layout_marginTop="15px"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/characterIconArmorIcon"
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/sx2icon" />
+
+                        <ImageView
+                            android:layout_width="60px"
+                            android:layout_height="60px"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/frame2" />
+
+                        <TextView
+                            android:id="@+id/characterIconArmorQuality"
+                            android:layout_width="40px"
+                            android:layout_height="20px"
+                            android:layout_marginStart="40px"
+                            android:layout_marginTop="50px"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/greenrect"
+                            android:gravity="center"
+                            android:text="普通"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="15px" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-5px"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/characterIconArmorName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="坚固皮甲"
+                                android:textColor="@color/colorBlue"
+                                android:textSize="25px"
+                                android:visibility="visible" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/characterIconArmorIllustration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10px"
+                            android:layout_marginTop="0px"
+                            android:singleLine="true"
+                            android:text="防御力+20%"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20px"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0px"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/characterIconSkillImage"
+                        android:layout_width="75px"
+                        android:layout_height="75px"
+                        android:layout_marginStart="15px"
+                        android:layout_marginTop="15px"
+                        android:layout_marginEnd="15px"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/skillattack1"
+                        android:maxWidth="75px"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/characterIconFrame5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15px"
+                        android:layout_marginTop="15px"
+                        android:layout_marginEnd="15px"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="75px"
+                        android:src="@drawable/frame"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/characterIconLighting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40px"
+                        android:layout_marginTop="85px"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="25px"
+                        android:src="@drawable/lightening"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/characterIconSkillPoint"
+                        android:layout_width="65px"
+                        android:layout_height="26px"
+                        android:layout_marginStart="59px"
+                        android:layout_marginTop="84px"
+                        android:background="@drawable/grey4rect"
+                        android:gravity="center"
+                        android:text="30/60"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20px" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/characterIconSkillName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15px"
+                        android:text="攻击·α"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="25px" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="40px"
+                        android:layout_marginTop="10px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/characterIconSkillIncreasingMethod"
+                            android:layout_width="104px"
+                            android:layout_height="30px"
+                            android:layout_marginStart="10px"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/greenrect"
+                            android:gravity="center"
+                            android:text="自动回复"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="22px" />
+
+                        <TextView
+                            android:id="@+id/characterIconSkillAutoRelease"
+                            android:layout_width="104px"
+                            android:layout_height="30px"
+                            android:adjustViewBounds="true"
+                            android:background="@drawable/grey3rect"
+                            android:gravity="center"
+                            android:text="自动触发"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="22px" />
+
+                        <LinearLayout
+                            android:layout_width="70px"
+                            android:layout_height="30px"
+                            android:background="@drawable/greyrect"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/characterIconClock"
+                                android:layout_width="30px"
+                                android:layout_height="30px"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/clock" />
+
+                            <TextView
+                                android:id="@+id/characterIconSkillDuration"
+                                android:layout_width="45px"
+                                android:layout_height="30px"
+                                android:text="15s"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="22px" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/characterIconSkillIllustration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35px"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:text="攻击力+45%"
+                android:textColor="@color/colorWhite"
+                android:textSize="24px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/teamUnavailable"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPauseShade"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ScrollView
+            android:id="@+id/teamListScrollView"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50px"
+            android:layout_marginHorizontal="100px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:id="@+id/teamList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            </LinearLayout>
+        </ScrollView>
+        <TextView
+            android:id="@+id/hint1"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单击编队前的数字即可更换编队"
+            android:textColor="@color/colorWhite"
+            android:textSize="32px"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/characterUnavailable"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:id="@+id/temp23"
+            android:overScrollMode="never"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:id="@+id/characterList"
+                android:background="@drawable/card_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPauseShade" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="30px"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content"
+            android:text="选取一个干员:"
+            app:layout_constraintBottom_toTopOf="@id/temp23"
+            app:layout_constraintStart_toStartOf="@id/temp23" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/placeContentLayout"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorShade"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="请选择前往的地点:"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/placeContentRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="100px"
+            android:layout_marginTop="100px"
+            android:overScrollMode="never"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="36dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

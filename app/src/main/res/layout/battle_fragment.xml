@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/stage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/battlestage">
+
+    <ImageView
+        android:id="@+id/pauseButton"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginTop="20px"
+        android:layout_marginEnd="25px"
+        android:adjustViewBounds="true"
+        android:src="@drawable/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/speedButton"
+        android:layout_width="138px"
+        android:layout_height="138px"
+        android:layout_marginTop="21px"
+        android:layout_marginEnd="180px"
+        android:adjustViewBounds="true"
+        android:src="@drawable/speed1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/costFloat0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="750px"
+        android:layout_marginRight="0px"
+        android:adjustViewBounds="true"
+        android:maxHeight="60px"
+        android:src="@drawable/iconfloat"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/costFloat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="650px"
+        android:layout_marginRight="0px"
+        android:adjustViewBounds="true"
+        android:maxHeight="60px"
+        android:src="@drawable/iconfloat"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/costFloat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550px"
+        android:layout_marginRight="0px"
+        android:adjustViewBounds="true"
+        android:maxHeight="60px"
+        android:src="@drawable/iconfloat"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/costFloat3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450px"
+        android:layout_marginRight="0px"
+        android:adjustViewBounds="true"
+        android:maxHeight="60px"
+        android:src="@drawable/iconfloat"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layer4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layer3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layer2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/stateColumn"
+        android:layout_width="150px"
+        android:layout_height="wrap_content"
+        android:background="@color/colorUnavailable"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/stateColumnIcon"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_marginHorizontal="20px"
+            android:layout_marginTop="20px"
+            android:layout_marginBottom="10px"
+            android:src="@drawable/agzicon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/stateColumnHurtStateBefore"
+                android:layout_width="50px"
+                android:layout_height="25px"
+                android:layout_marginVertical="5px"
+                android:layout_marginStart="10px"
+                android:background="@drawable/pinkrect"
+                android:gravity="center"
+                android:text="受击"
+                android:textColor="@color/colorWhite"
+                android:textSize="18px" />
+
+            <ImageView
+                android:id="@+id/temp17"
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:layout_marginStart="0px"
+                android:layout_marginEnd="0px"
+                android:src="@drawable/pause" />
+
+            <TextView
+                android:id="@+id/stateColumnHurtStateAfter"
+                android:layout_width="50px"
+                android:layout_height="25px"
+                android:layout_marginVertical="5px"
+                android:layout_marginEnd="10px"
+                android:background="@drawable/grey2rect"
+                android:gravity="center"
+                android:text="自动"
+                android:textColor="@color/colorWhite"
+                android:textSize="18px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/stateColumnHp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8px"
+            android:text="生命  1387/1387"
+            android:textColor="@color/colorHalfWhite"
+            android:textSize="18px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/stateColumnAttack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8px"
+            android:text="攻击  485"
+            android:textColor="@color/colorHalfWhite"
+            android:textSize="18px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/stateColumnDefend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8px"
+            android:text="防御  353"
+            android:textColor="@color/colorHalfWhite"
+            android:textSize="18px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/stateColumnMagicalDefend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8px"
+            android:text="法抗  10"
+            android:textColor="@color/colorHalfWhite"
+            android:textSize="18px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/stateColumnBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8px"
+            android:layout_marginBottom="5px"
+            android:text="阻挡  3"
+            android:textColor="@color/colorHalfWhite"
+            android:textSize="18px"
+            android:textStyle="bold" />
+
+        <com.example.myapplication.SkillIcon
+            android:id="@+id/stateColumnSkill"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_marginHorizontal="20px"
+            android:layout_marginVertical="5px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/stateColumnSkillChargeMethod"
+                android:layout_width="60px"
+                android:layout_height="30px"
+                android:layout_marginVertical="5px"
+                android:layout_marginStart="10px"
+                android:layout_marginEnd="5px"
+                android:background="@drawable/pinkrect"
+                android:gravity="center"
+                android:text="受击"
+                android:textColor="@color/colorWhite"
+                android:textSize="20px" />
+
+            <TextView
+                android:id="@+id/stateColumnSkillReleaseMethod"
+                android:layout_width="60px"
+                android:layout_height="30px"
+                android:layout_marginVertical="5px"
+                android:layout_marginStart="5px"
+                android:layout_marginEnd="10px"
+                android:background="@drawable/grey2rect"
+                android:gravity="center"
+                android:text="自动"
+                android:textColor="@color/colorWhite"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/stateColumnSkillChargeIcon"
+                android:layout_width="30px"
+                android:layout_height="30px"
+                android:layout_marginVertical="5px"
+                android:layout_marginStart="20px"
+                android:src="@drawable/lightening2" />
+
+            <TextView
+                android:id="@+id/stateColumnSkillChargeText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="5px"
+                android:layout_marginEnd="20px"
+                android:background="@color/colorSkillReadyBackground"
+                android:gravity="center"
+                android:text="Ready"
+                android:textColor="@color/colorBlack"
+                android:textSize="20px" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/stateColumnSkillName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:gravity="center"
+            android:text="攻击·α型"
+            android:textColor="@color/colorHalfWhite"
+            android:textSize="22px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/stateColumnSkillIllustrate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5px"
+            android:gravity="center"
+            android:text="攻击力+45%"
+            android:textColor="@color/colorHalfWhite"
+            android:textSize="18px" />
+
+        <ImageView
+            android:id="@+id/stateColumnRetreat"
+            android:layout_width="110px"
+            android:layout_height="110px"
+            android:layout_marginHorizontal="20px"
+            android:layout_marginVertical="10px"
+            android:src="@drawable/retreat2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/battleCharacterIconList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"></LinearLayout>
+
+    <TextView
+        android:id="@+id/highLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8px"
+        android:background="@color/colorHighLightWhite"
+        android:textSize="60px"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pauseBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPauseShade"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/temp9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAUSE"
+            android:textColor="@color/colorWhite"
+            android:textSize="60sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="----暂停中----"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/temp9" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/failBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRedBlack"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_marginStart="200px"
+            android:src="@drawable/missionfail"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/failHint"
+            android:layout_width="600px"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="250px"
+            android:text="-远程攻击单位在锁定目标后，不会轻易改变目标，即使他们被别人攻击。&#x000A;&#x000A;-爆炸生物在死亡时会对周围3行的生物造成10倍于自身攻击的伤害。"
+            android:textColor="@color/colorWhite"
+            android:textSize="25px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/endBlack"
+        android:layout_width="match_parent"
+        android:layout_height="275px"
+        android:background="@color/colorHalfBlack"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/endGifImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

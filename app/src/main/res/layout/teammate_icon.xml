@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="15px"
+    android:layout_width="130px"
+    android:layout_height="130px">
+
+    <ImageView
+        android:id="@+id/iconImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="175px"
+        android:src="@drawable/agzicon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iconElite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="60px"
+        android:src="@drawable/elite3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/iconLv"
+        android:layout_width="wrap_content"
+        android:layout_height="45px"
+        android:layout_marginEnd="4px"
+        android:text="LV50"
+        android:textColor="@color/colorWhite"
+        android:textSize="30px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/iconState"
+        android:layout_width="175px"
+        android:layout_height="175px"
+        android:adjustViewBounds="true"
+        android:maxWidth="175px"
+        android:visibility="invisible"
+        android:src="@color/colorBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iconFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="175px"
+        android:visibility="visible"
+        android:src="@drawable/frame2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hurtState"
+        android:layout_width="40px"
+        android:layout_height="23px"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/pinkrect"
+        android:gravity="center"
+        android:text="受击"
+        android:textColor="@color/colorWhite"
+        android:textSize="17px"
+        app:layout_constraintEnd_toEndOf="@+id/iconImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/iconWeapon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0px"
+        android:layout_marginTop="1px"
+        android:adjustViewBounds="true"
+        android:maxWidth="34px"
+        android:src="@drawable/physicbattleicon"
+        android:background="@color/colorHalfWhite"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/unavailable"
+        android:visibility="invisible"
+        android:src="@color/colorUnavailable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

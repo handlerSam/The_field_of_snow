@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/stagevague"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/battleEndTouchBoard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/temp18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/battleEndCharacter"
+        android:src="@drawable/sx2_eyesclose_small"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="75px"
+        android:layout_marginStart="75px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/temp16"
+        android:orientation="horizontal"
+        android:background="@drawable/dial"
+        android:layout_marginTop="175px"
+        android:layout_marginStart="575px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/battleEndDial"
+            android:textSize="30px"
+            android:text="小狐狸，过来。我帮你处理一下伤口。......听话，别犟"
+            android:layout_gravity="center"
+            android:layout_marginStart="50px"
+            android:layout_marginEnd="20px"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/temp18"
+        android:layout_width="match_parent"
+        android:layout_height="420px"
+        android:gravity="center"
+        android:background="@color/colorShade"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginStart="45px"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/battleEndTitle"
+                        android:text="乌萨斯雪原"
+                        android:textSize="60px"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="15px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/temp13"
+                        android:text="OPERATION"
+                        android:textSize="35px"
+                        android:textColor="@color/colorWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/battleEndSubtitle"
+                        android:text="伏尔加河畔"
+                        android:textSize="50px"
+                        android:textColor="@color/colorWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/battleEndStar1"
+                    android:layout_marginStart="20px"
+                    android:src="@drawable/star_full"
+                    android:layout_width="90px"
+                    android:layout_height="90px"/>
+                <ImageView
+                    android:id="@+id/battleEndStar2"
+                    android:layout_marginStart="10px"
+                    android:src="@drawable/star_full"
+                    android:layout_width="90px"
+                    android:layout_height="90px"/>
+                <ImageView
+                    android:id="@+id/battleEndStar3"
+                    android:layout_marginStart="10px"
+                    android:src="@drawable/star_hollow"
+                    android:layout_width="90px"
+                    android:layout_height="90px"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/temp14"
+                android:text="行动结束"
+                android:layout_gravity="center_horizontal"
+                android:textSize="120px"
+                android:textColor="@color/colorWhite"
+                android:layout_marginBottom="15px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="360px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="35px"
+            android:background="@color/colorHalfWhite" />
+
+        <LinearLayout
+            android:id="@+id/battleEndColumn"
+            android:layout_marginStart="15px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="190px">
+
+                <LinearLayout
+                    android:id="@+id/battleEndStateColumn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="190px"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:layout_width="1150px"
+                android:layout_height="2px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="5px"
+                android:background="@color/colorHalfWhite" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="190px">
+
+                <LinearLayout
+                    android:id="@+id/battleEndItemColumn"
+                    android:layout_width="match_parent"
+                    android:layout_height="190px"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

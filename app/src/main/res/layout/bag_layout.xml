@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bagbackground">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="190px"
+                android:layout_height="95px"
+                android:layout_marginStart="50px"
+                android:layout_marginTop="25px"
+                android:background="@drawable/backbutton_shade"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/backButton2"
+                android:layout_width="180px"
+                android:layout_height="70px"
+                android:layout_marginStart="50px"
+                android:layout_marginTop="25px"
+                android:background="@color/colorSkillChargeBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="45px"
+                    android:layout_height="45px"
+                    android:layout_marginStart="15px"
+                    android:src="@drawable/backarray" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bagRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70px"
+            android:layout_marginBottom="50px"
+            android:overScrollMode="never" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/characterIconShade5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorUnavailable"
+        android:visibility="invisible" />
+    <LinearLayout
+        android:id="@+id/itemIllustrationLayout"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:background="@drawable/item_illustrationbackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="350px"
+        android:layout_marginVertical="230px">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="100px"
+                    android:layout_marginLeft="200px"
+                    android:background="@color/colorgray4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/itemIllustrationNameTextView"
+                        android:layout_marginVertical="5px"
+                        android:text="  全新装置  "
+                        android:textSize="35px"
+                        android:textColor="@color/colorWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0px"
+                    android:layout_marginTop="100px"
+                    android:background="@color/colorgray4"
+                    app:layout_constraintEnd_toStartOf="@id/temp29"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5px"
+                        android:text="  库存  "
+                        android:textColor="@color/colorHalfWhite"
+                        android:textSize="35px" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/temp29"
+                    android:layout_width="150px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="180px"
+                    android:layout_marginTop="100px"
+                    android:gravity="right"
+                    android:background="@color/colorHalfWhite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/itemIllustrationNumberTextview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="5px"
+                        android:text=" 3  "
+                        android:textColor="@color/colorHalfBlack"
+                        android:textSize="35px" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/itemIllustrationItemImageView"
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    android:layout_marginLeft="230px"
+                    android:layout_marginTop="50px"
+                    android:src="@drawable/item_qxzz"/>
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginLeft="80px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/itemIllustrationIllustrationTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:layout_marginEnd="220px"
+                    android:text="收缴来的全新机械"
+                    android:textColor="@color/colorgray4"
+                    android:textSize="32px"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/itemSynthesisButton"
+                    android:layout_width="220px"
+                    android:layout_height="100px"
+                    android:layout_marginEnd="180px"
+                    android:layout_marginBottom="90px"
+                    android:background="@drawable/synthesis_button"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="70px"
+                        android:layout_marginVertical="5px"
+                        android:gravity="center"
+                        android:text="合成"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="35px" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/characterIconShade6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorUnavailable"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:id="@+id/synthesisLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/synthesisLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorgray4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="310px"
+                    android:layout_height="50px"
+                    android:layout_weight="1"
+                    android:background="@color/colorPauseShade"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="32px"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/temp48"
+                    android:layout_width="260px"
+                    android:layout_height="260px"
+                    android:layout_marginVertical="30px"
+                    android:layout_marginStart="30px"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/bagSynthesis1MainItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/itembackgroundyellow"
+                        android:src="@drawable/item_jhj"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/bagSynthesis1MainItemNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15px"
+                        android:layout_marginBottom="10px"
+                        android:background="@color/colorHalfBlack"
+                        android:gravity="center_horizontal"
+                        android:text="  1  "
+                        android:textColor="@color/colorWhite"
+                        android:textSize="42px"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20px"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toEndOf="@id/temp48"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/bagSynthesis1MainItemName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50px"
+                        android:layout_weight="1"
+                        android:background="@color/colorPauseShade"
+                        android:gravity="center_vertical"
+                        android:text="      方案一：聚合剂"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="32px" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25px"
+                            android:layout_height="25px"
+                            android:src="@drawable/leftarrow2" />
+
+                        <TextView
+                            android:id="@+id/temp11"
+                            android:layout_width="5px"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="20px"
+                            android:layout_marginEnd="30px"
+                            android:background="@color/colorWhite"
+                            app:layout_constraintStart_toEndOf="@id/characterRecyclerView"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="190px"
+                            android:layout_height="235px"
+                            android:layout_marginVertical="15px">
+
+                            <TextView
+                                android:id="@+id/bagSynthesis1Item1Red"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorQuarterRed"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/bagSynthesis1Item1"
+                                android:layout_width="170px"
+                                android:layout_height="170px"
+                                android:layout_marginTop="5px"
+                                android:background="@drawable/itembackgroundpurple"
+                                android:src="@drawable/item_ssmk"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/bagSynthesis1Item1Number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0/1"
+                                android:textColor="@color/colorWhite"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/bagSynthesis1Item1" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10px"
+                            android:text="+"
+                            android:textColor="@color/colorHalfWhite"
+                            android:textSize="50px" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="190px"
+                            android:layout_height="235px">
+
+                            <TextView
+                                android:id="@+id/bagSynthesis1Item2Red"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorQuarterRed"
+                                android:visibility="invisible" />
+
+                            <ImageView
+                                android:id="@+id/bagSynthesis1Item2"
+                                android:layout_width="170px"
+                                android:layout_height="170px"
+                                android:layout_marginTop="5px"
+                                android:background="@drawable/itembackgroundpurple"
+                                android:src="@drawable/item_wsyms"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/bagSynthesis1Item2Number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2/1"
+                                android:textColor="@color/colorWhite"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/bagSynthesis1Item2" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10px"
+                            android:text="+"
+                            android:textColor="@color/colorHalfWhite"
+                            android:textSize="50px" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="190px"
+                            android:layout_height="235px">
+
+                            <TextView
+                                android:id="@+id/bagSynthesis1Item3Red"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorQuarterRed"
+                                android:visibility="invisible" />
+
+                            <ImageView
+                                android:id="@+id/bagSynthesis1Item3"
+                                android:layout_width="170px"
+                                android:layout_height="170px"
+                                android:layout_marginTop="5px"
+                                android:background="@drawable/itembackgroundpurple"
+                                android:src="@drawable/item_rma7024"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/bagSynthesis1Item3Number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="14/1"
+                                android:textColor="@color/colorWhite"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/bagSynthesis1Item3" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/synthesisLayout1State"
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:layout_marginEnd="0px"
+                    android:layout_marginBottom="0px"
+                    android:background="@drawable/frame3"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/synthesisLayout2"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="@color/colorgray4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="310px"
+                    android:layout_height="50px"
+                    android:layout_weight="1"
+                    android:background="@color/colorPauseShade"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="32px"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/temp50"
+                    android:layout_width="260px"
+                    android:layout_height="260px"
+                    android:layout_marginVertical="30px"
+                    android:layout_marginStart="30px"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/bagSynthesis2MainItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/itembackgroundyellow"
+                        android:src="@drawable/item_jhj"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/bagSynthesis2MainItemNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15px"
+                        android:layout_marginBottom="10px"
+                        android:background="@color/colorHalfBlack"
+                        android:gravity="center_horizontal"
+                        android:text="  1  "
+                        android:textColor="@color/colorWhite"
+                        android:textSize="42px"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20px"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toEndOf="@id/temp50"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/bagSynthesis2MainItemName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50px"
+                        android:layout_weight="1"
+                        android:background="@color/colorPauseShade"
+                        android:gravity="center_vertical"
+                        android:text="      方案二：聚合剂"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="32px" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10px"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25px"
+                            android:layout_height="25px"
+                            android:src="@drawable/leftarrow2" />
+
+                        <TextView
+                            android:id="@+id/temp49"
+                            android:layout_width="5px"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="20px"
+                            android:layout_marginEnd="30px"
+                            android:background="@color/colorWhite"
+                            app:layout_constraintStart_toEndOf="@id/characterRecyclerView"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="190px"
+                            android:layout_height="235px"
+                            android:layout_marginVertical="15px">
+
+                            <TextView
+                                android:id="@+id/bagSynthesis2Item1Red"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorQuarterRed"
+                                android:visibility="visible" />
+
+                            <ImageView
+                                android:id="@+id/bagSynthesis2Item1"
+                                android:layout_width="170px"
+                                android:layout_height="170px"
+                                android:layout_marginTop="5px"
+                                android:background="@drawable/itembackgroundpurple"
+                                android:src="@drawable/item_ssmk"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/bagSynthesis2Item1Number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0/1"
+                                android:textColor="@color/colorWhite"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/bagSynthesis2Item1" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10px"
+                            android:text="+"
+                            android:textColor="@color/colorHalfWhite"
+                            android:textSize="50px" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="190px"
+                            android:layout_height="235px">
+
+                            <TextView
+                                android:id="@+id/bagSynthesis2Item2Red"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorQuarterRed"
+                                android:visibility="invisible" />
+
+                            <ImageView
+                                android:id="@+id/bagSynthesis2Item2"
+                                android:layout_width="170px"
+                                android:layout_height="170px"
+                                android:layout_marginTop="5px"
+                                android:background="@drawable/itembackgroundpurple"
+                                android:src="@drawable/item_wsyms"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/bagSynthesis2Item2Number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2/1"
+                                android:textColor="@color/colorWhite"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/bagSynthesis2Item2" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10px"
+                            android:text="+"
+                            android:textColor="@color/colorHalfWhite"
+                            android:textSize="50px" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="190px"
+                            android:layout_height="235px">
+
+                            <TextView
+                                android:id="@+id/bagSynthesis2Item3Red"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorQuarterRed"
+                                android:visibility="invisible" />
+
+                            <ImageView
+                                android:id="@+id/bagSynthesis2Item3"
+                                android:layout_width="170px"
+                                android:layout_height="170px"
+                                android:layout_marginTop="5px"
+                                android:background="@drawable/null_item_background"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/bagSynthesis2Item3Number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="14/1"
+                                android:textColor="@color/colorWhite"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/bagSynthesis2Item3" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/synthesisLayout2State"
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:layout_marginEnd="0px"
+                    android:layout_marginBottom="0px"
+                    android:background="@drawable/frame3"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="290px"
+            android:layout_marginStart="50px"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/synthesisCompositionChoose"
+                android:text="已选：方案一"
+                android:textColor="@color/colorWhite"
+                android:textSize="32px"
+                android:gravity="center"
+                android:background="@color/colorShade"
+                android:layout_marginBottom="50px"
+                android:layout_width="match_parent"
+                android:layout_height="70px"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:background="@color/colorQuarterBlack"
+                android:layout_width="290px"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/synthesisAdd"
+                        android:layout_weight="4"
+                        android:text="+"
+                        android:gravity="center"
+                        android:textSize="40px"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorShade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70px"/>
+                    <TextView
+                        android:id="@+id/synthesisMax"
+                        android:layout_weight="1"
+                        android:text="最多"
+                        android:gravity="center"
+                        android:textSize="38px"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorShade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70px"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/synthesisNumber"
+                    android:text="1"
+                    android:textSize="86px"
+                    android:textColor="@color/colorYellow"
+                    android:layout_marginTop="5px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="110px"/>
+                <TextView
+                    android:text="合成份数"
+                    android:gravity="center"
+                    android:textSize="38px"
+                    android:layout_marginTop="10px"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_marginTop="20px"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/synthesisReduce"
+                        android:layout_weight="4"
+                        android:text="—"
+                        android:gravity="center"
+                        android:textSize="40px"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorShade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70px"/>
+                    <TextView
+                        android:id="@+id/synthesisMin"
+                        android:layout_weight="1"
+                        android:text="最少"
+                        android:gravity="center"
+                        android:textSize="38px"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorShade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70px"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/synthesisButton"
+                android:text="开始合成"
+                android:textColor="@color/colorWhite"
+                android:textSize="32px"
+                android:gravity="center"
+                android:background="@drawable/synthesis_button"
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="100px"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

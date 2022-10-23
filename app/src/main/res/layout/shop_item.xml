@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20px"
+    android:orientation="vertical"
+    android:layout_width="400px"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/temp32"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlack"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/shopItemNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_marginBottom="5px"
+            android:text="聚合剂"
+            android:textColor="@color/colorWhite"
+            android:textSize="38px" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/temp32">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorShopItemBackground"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/shopItemImageView"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_margin="20px"
+                android:src="@drawable/item_jhj" />
+
+            <LinearLayout
+                android:layout_width="250px"
+                android:layout_height="60px"
+                android:layout_marginBottom="20px"
+                android:background="@drawable/shop_item_price_background"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/shopItemCurrencyIcon"
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_marginTop="0px"
+                    android:layout_marginEnd="50px"
+                    android:src="@drawable/source" />
+
+                <TextView
+                    android:id="@+id/shopItemPriceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50px"
+                    android:layout_marginBottom="3px"
+                    android:text="4"
+                    android:textColor="@color/colorHalfBlack"
+                    android:textSize="40px" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/shopItemNumberTextView"
+            android:layout_width="90px"
+            android:layout_height="38px"
+            android:layout_marginTop="10px"
+            android:layout_marginEnd="10px"
+            android:background="@drawable/silverrect"
+            android:gravity="center"
+            android:text="剩余2"
+            android:textColor="@color/colorHalfBlack"
+            android:textSize="28px"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/shopItemShade"
+        android:layout_width="match_parent"
+        android:layout_height="375px"
+        android:background="@color/colorUnavailable"
+        android:visibility="invisible"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="70px"
+            android:layout_marginTop="290px"
+            android:text="售 罄"
+            android:textColor="@color/colorWhite"
+            android:textSize="50px" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

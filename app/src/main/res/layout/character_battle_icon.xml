@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14.5px"
+        android:id="@+id/battleIconStage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:id="@+id/temp1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/battleIconCharacterImage"
+                android:layout_width="180px"
+                android:layout_height="180px"
+                android:adjustViewBounds="true"
+                android:src="@drawable/agzicon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <ImageView
+                android:layout_width="27px"
+                android:layout_height="27px"
+                android:adjustViewBounds="true"
+                android:src="@drawable/elite3"
+                android:id="@+id/battleIconElite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="27px"
+                android:layout_marginEnd="5px"
+                android:text="LV50"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/battleIconLv"
+                android:textSize="18px"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:layout_marginTop="10px"
+            android:id="@+id/battleIconState"
+            android:background="@color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/battleIconFrame"
+                android:layout_width="180px"
+                android:layout_height="180px"
+                android:adjustViewBounds="true"
+                android:src="@drawable/frame"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/battleIconOnbattle"
+                android:layout_width="180px"
+                android:layout_height="180px"
+                android:adjustViewBounds="true"
+                android:visibility="invisible"
+                android:src="@drawable/onbattle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginStart="40px"
+                android:adjustViewBounds="true"
+                android:id="@+id/temp2"
+                android:visibility="visible"
+                android:src="@drawable/flagleft"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/temp3"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginEnd="41px"
+                android:adjustViewBounds="true"
+                android:src="@drawable/rightflag"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="42px"
+                android:layout_height="42px"
+                android:layout_marginStart="44px"
+                android:layout_marginTop="1px"
+                android:adjustViewBounds="true"
+                android:id="@+id/battleIconWeapon"
+                android:src="@drawable/physicbattleicon"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="49px"
+                android:layout_height="49px"
+                android:layout_marginEnd="36px"
+                android:text="50"
+                android:id="@+id/battleIconCost"
+                android:textColor="@color/colorWhite"
+                android:visibility="visible"
+                android:textSize="32px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/battleIconRevival"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="70.3"
+                android:textColor="@color/colorWhite"
+                android:textSize="50px"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--<ImageView
+                android:id="@+id/battleIconOnchosen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:visibility="visible"
+                android:maxWidth="145px"
+                android:src="@drawable/choosingbackground"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/battleIconRetreat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="48px"
+                android:src="@drawable/retreat"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:layout_width="18px"
+            android:layout_height="18px"
+            android:layout_marginTop="0px"
+            android:layout_marginEnd="57px"
+            android:adjustViewBounds="true"
+            android:id="@+id/temp4"
+            android:visibility="visible"
+            android:src="@drawable/costicon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
